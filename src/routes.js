@@ -4,13 +4,13 @@ import { Route, IndexRoute } from 'react-router';
 import App from './components/app';
 import PostsIndex from './components/posts_index';
 import PostsNew from './components/posts_new';
-import Post from './components/post';
+import PostsShow from './components/postsShow';
 
 
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={PostsIndex} />
     <Route path="/posts/new" component={PostsNew} />
-    <Route path="/posts/:id" component={Post} />
+    <Route path="/posts/:id" component={PostsShow} />
   </Route>
 );
